@@ -4,7 +4,7 @@
   "description": "",
 
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/other.ts",
+    "start": "ts-node-dev --respawn --transpile-only src/asyncronous.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   
