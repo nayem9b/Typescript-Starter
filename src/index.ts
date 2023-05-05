@@ -1,2 +1,2 @@
-const course: string= "Next Level Development"
+const course: string= "Next Level Development fgfdgfgdfg"
 console.log(course);
