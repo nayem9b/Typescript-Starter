@@ -8,4 +8,8 @@ const makePromise= () : Promise<string>=>{
         }
     })
 }
-makePromise()
+const getPromiseData = async (): Promise<void>=>{
+    const data = await makePromise()
+    console.log(data)
+}
+const result1 = makePromise()
