@@ -17,8 +17,14 @@ type Sheikh = {
   wife1: string;
   wife2: string;
 };
-
+// Check korbe ei sheikh type a wife 1 ase kina? true: false
 type CheckProperty<T, K> = K extends keyof Sheikh ? true : false; // wife1 extends wife1 | wife 2
 
 type CheckWife1 = CheckProperty<Sheikh, "wife1">; //jake search korbo take argument hisabe pathabo
-// Check korbe ei sheikh type a wife 1 ase kina? true: false
+
+type CheckWife3 = CheckProperty<Sheikh, "girlfriend">;
+
+// Joss example
+type Bandhubi = "Monika" | "Rachel" | "Pheobe";
+type RemoveBandhubi<T, K> = T extends K ? never : T;
+type CurrentBandubi = RemoveBandhubi<Bandhubi, "Monika">;
