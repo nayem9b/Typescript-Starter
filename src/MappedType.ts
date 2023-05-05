@@ -24,3 +24,7 @@ const reactangularArea: AreaReadOnly = {
   height: 150,
   width: 80,
 };
+
+type Area = {
+  [key in "height" | "width"]: number;
+};
